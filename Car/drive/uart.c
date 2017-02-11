@@ -39,7 +39,7 @@ void Receiver_putCharacterToBuffer ( char cCharacter )
 {
 		if ( ( cCharacter == TERMINATOR ) && ( sRxBuffer.eStatus != OVERFLOW ) )
 		{
-			sRxBuffer.cData[sRxBuffer.ucCharCtr] = (char) NULL;
+			sRxBuffer.cData[sRxBuffer.ucCharCtr] = (intptr_t) NULL;
 			sRxBuffer.eStatus = READY;
 			sRxBuffer.ucCharCtr = 0;
 		}
@@ -67,7 +67,7 @@ void Receiver_GetStringCopy( char * ucDestination )
 			*ucDestination = sRxBuffer.cData[ucCharCounter];
 			ucDestination++;
 		}
-		*ucDestination = (char) NULL;
+		*ucDestination = (intptr_t) NULL;
 		sRxBuffer.eStatus = EMPTY;
 }
 
@@ -97,6 +97,8 @@ char Transmiter_GetCharacterFromBuffer(void)
 				return NULL;
 	}
 	*/
+	__asm__("NOP");
+	return ' ';
 }
 
 void Transmiter_SendString ( char cString[])

@@ -178,7 +178,7 @@ Discarded input sections
  .data          0x00000000        0x0 ./sources/uart.o
  .bss           0x00000000        0x0 ./sources/uart.o
  .text.Transmiter_GetCharacterFromBuffer
-                0x00000000        0x2 ./sources/uart.o
+                0x00000000        0x6 ./sources/uart.o
  .text.Transmiter_SendString
                 0x00000000       0x20 ./sources/uart.o
  .text.Transmiter_GetStatus
@@ -2467,51 +2467,51 @@ m_usb_global
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data_2 overflowed with stack and heap)
 OUTPUT(drive.elf elf32-littlearm)
 
-.debug_line     0x00000000     0x56fe
+.debug_line     0x00000000     0x56ff
  .debug_line    0x00000000      0x19f ./startup/startup_MK64F12.o
  .debug_line    0x0000019f      0x156 ./startup/system_MK64F12.o
  .debug_line    0x000002f5       0xf3 ./sources/command_decoder.o
  .debug_line    0x000003e8      0x1f0 ./sources/drive.o
  .debug_line    0x000005d8      0x17d ./sources/main.o
  .debug_line    0x00000755      0x134 ./sources/my_string.o
- .debug_line    0x00000889      0x211 ./sources/uart.o
- .debug_line    0x00000a9a      0x7f1 ./drivers/fsl_clock.o
- .debug_line    0x0000128b      0xae4 ./drivers/fsl_dspi.o
- .debug_line    0x00001d6f      0x72a ./drivers/fsl_edma.o
- .debug_line    0x00002499      0x540 ./drivers/fsl_enet.o
- .debug_line    0x000029d9      0x756 ./drivers/fsl_flexcan.o
- .debug_line    0x0000312f      0x466 ./drivers/fsl_ftm.o
- .debug_line    0x00003595      0x17e ./drivers/fsl_gpio.o
- .debug_line    0x00003713      0x81a ./drivers/fsl_i2c.o
- .debug_line    0x00003f2d      0x66d ./drivers/fsl_sai.o
- .debug_line    0x0000459a      0x6f5 ./drivers/fsl_sdhc.o
- .debug_line    0x00004c8f      0x65f ./drivers/fsl_uart.o
- .debug_line    0x000052ee       0x59 ./board/board.o
- .debug_line    0x00005347       0x62 ./board/clock_config.o
- .debug_line    0x000053a9      0x355 ./board/pin_mux.o
+ .debug_line    0x00000889      0x212 ./sources/uart.o
+ .debug_line    0x00000a9b      0x7f1 ./drivers/fsl_clock.o
+ .debug_line    0x0000128c      0xae4 ./drivers/fsl_dspi.o
+ .debug_line    0x00001d70      0x72a ./drivers/fsl_edma.o
+ .debug_line    0x0000249a      0x540 ./drivers/fsl_enet.o
+ .debug_line    0x000029da      0x756 ./drivers/fsl_flexcan.o
+ .debug_line    0x00003130      0x466 ./drivers/fsl_ftm.o
+ .debug_line    0x00003596      0x17e ./drivers/fsl_gpio.o
+ .debug_line    0x00003714      0x81a ./drivers/fsl_i2c.o
+ .debug_line    0x00003f2e      0x66d ./drivers/fsl_sai.o
+ .debug_line    0x0000459b      0x6f5 ./drivers/fsl_sdhc.o
+ .debug_line    0x00004c90      0x65f ./drivers/fsl_uart.o
+ .debug_line    0x000052ef       0x59 ./board/board.o
+ .debug_line    0x00005348       0x62 ./board/clock_config.o
+ .debug_line    0x000053aa      0x355 ./board/pin_mux.o
 
-.debug_info     0x00000000    0x19f71
+.debug_info     0x00000000    0x19f7c
  .debug_info    0x00000000       0xa0 ./startup/startup_MK64F12.o
  .debug_info    0x000000a0      0x5d8 ./startup/system_MK64F12.o
  .debug_info    0x00000678      0x3dd ./sources/command_decoder.o
  .debug_info    0x00000a55      0xc5f ./sources/drive.o
  .debug_info    0x000016b4      0x409 ./sources/main.o
  .debug_info    0x00001abd      0x287 ./sources/my_string.o
- .debug_info    0x00001d44      0xd7e ./sources/uart.o
- .debug_info    0x00002ac2     0x220e ./drivers/fsl_clock.o
- .debug_info    0x00004cd0     0x316d ./drivers/fsl_dspi.o
- .debug_info    0x00007e3d     0x2198 ./drivers/fsl_edma.o
- .debug_info    0x00009fd5     0x23f6 ./drivers/fsl_enet.o
- .debug_info    0x0000c3cb     0x2515 ./drivers/fsl_flexcan.o
- .debug_info    0x0000e8e0     0x1237 ./drivers/fsl_ftm.o
- .debug_info    0x0000fb17      0x554 ./drivers/fsl_gpio.o
- .debug_info    0x0001006b     0x23e9 ./drivers/fsl_i2c.o
- .debug_info    0x00012454     0x209e ./drivers/fsl_sai.o
- .debug_info    0x000144f2     0x2902 ./drivers/fsl_sdhc.o
- .debug_info    0x00016df4     0x1d55 ./drivers/fsl_uart.o
- .debug_info    0x00018b49       0x79 ./board/board.o
- .debug_info    0x00018bc2       0x33 ./board/clock_config.o
- .debug_info    0x00018bf5     0x137c ./board/pin_mux.o
+ .debug_info    0x00001d44      0xd89 ./sources/uart.o
+ .debug_info    0x00002acd     0x220e ./drivers/fsl_clock.o
+ .debug_info    0x00004cdb     0x316d ./drivers/fsl_dspi.o
+ .debug_info    0x00007e48     0x2198 ./drivers/fsl_edma.o
+ .debug_info    0x00009fe0     0x23f6 ./drivers/fsl_enet.o
+ .debug_info    0x0000c3d6     0x2515 ./drivers/fsl_flexcan.o
+ .debug_info    0x0000e8eb     0x1237 ./drivers/fsl_ftm.o
+ .debug_info    0x0000fb22      0x554 ./drivers/fsl_gpio.o
+ .debug_info    0x00010076     0x23e9 ./drivers/fsl_i2c.o
+ .debug_info    0x0001245f     0x209e ./drivers/fsl_sai.o
+ .debug_info    0x000144fd     0x2902 ./drivers/fsl_sdhc.o
+ .debug_info    0x00016dff     0x1d55 ./drivers/fsl_uart.o
+ .debug_info    0x00018b54       0x79 ./board/board.o
+ .debug_info    0x00018bcd       0x33 ./board/clock_config.o
+ .debug_info    0x00018c00     0x137c ./board/pin_mux.o
 
 .debug_abbrev   0x00000000     0x373c
  .debug_abbrev  0x00000000       0x14 ./startup/startup_MK64F12.o
@@ -2621,7 +2621,7 @@ OUTPUT(drive.elf elf32-littlearm)
  .debug_ranges  0x00001148       0x10 ./board/clock_config.o
  .debug_ranges  0x00001158      0x130 ./board/pin_mux.o
 
-.debug_str      0x00000000     0xb81c
+.debug_str      0x00000000     0xb825
  .debug_str     0x00000000      0x3c8 ./startup/system_MK64F12.o
                                 0x40c (size before relaxing)
  .debug_str     0x000003c8      0x216 ./sources/command_decoder.o
@@ -2632,35 +2632,35 @@ OUTPUT(drive.elf elf32-littlearm)
                                 0x426 (size before relaxing)
  .debug_str     0x000013b7      0x115 ./sources/my_string.o
                                 0x2cb (size before relaxing)
- .debug_str     0x000014cc      0xc0c ./sources/uart.o
-                               0x143f (size before relaxing)
- .debug_str     0x000020d8     0x12de ./drivers/fsl_clock.o
+ .debug_str     0x000014cc      0xc15 ./sources/uart.o
+                               0x1448 (size before relaxing)
+ .debug_str     0x000020e1     0x12de ./drivers/fsl_clock.o
                                0x1b51 (size before relaxing)
- .debug_str     0x000033b6     0x11c8 ./drivers/fsl_dspi.o
+ .debug_str     0x000033bf     0x11c8 ./drivers/fsl_dspi.o
                                0x20e2 (size before relaxing)
- .debug_str     0x0000457e      0xf54 ./drivers/fsl_edma.o
+ .debug_str     0x00004587      0xf54 ./drivers/fsl_edma.o
                                0x1aed (size before relaxing)
- .debug_str     0x000054d2     0x108c ./drivers/fsl_enet.o
+ .debug_str     0x000054db     0x108c ./drivers/fsl_enet.o
                                0x207f (size before relaxing)
- .debug_str     0x0000655e      0xff2 ./drivers/fsl_flexcan.o
+ .debug_str     0x00006567      0xff2 ./drivers/fsl_flexcan.o
                                0x1f2e (size before relaxing)
- .debug_str     0x00007550      0x912 ./drivers/fsl_ftm.o
+ .debug_str     0x00007559      0x912 ./drivers/fsl_ftm.o
                                0x141d (size before relaxing)
- .debug_str     0x00007e62       0xf6 ./drivers/fsl_gpio.o
+ .debug_str     0x00007e6b       0xf6 ./drivers/fsl_gpio.o
                                 0x778 (size before relaxing)
- .debug_str     0x00007f58      0xc09 ./drivers/fsl_i2c.o
+ .debug_str     0x00007f61      0xc09 ./drivers/fsl_i2c.o
                                0x1b70 (size before relaxing)
- .debug_str     0x00008b61      0x9fd ./drivers/fsl_sai.o
+ .debug_str     0x00008b6a      0x9fd ./drivers/fsl_sai.o
                                0x198c (size before relaxing)
- .debug_str     0x0000955e     0x1511 ./drivers/fsl_sdhc.o
+ .debug_str     0x00009567     0x1511 ./drivers/fsl_sdhc.o
                                0x248a (size before relaxing)
- .debug_str     0x0000aa6f      0x75f ./drivers/fsl_uart.o
+ .debug_str     0x0000aa78      0x75f ./drivers/fsl_uart.o
                                0x1c10 (size before relaxing)
- .debug_str     0x0000b1ce       0x2c ./board/board.o
+ .debug_str     0x0000b1d7       0x2c ./board/board.o
                                 0x1d1 (size before relaxing)
- .debug_str     0x0000b1fa       0x33 ./board/clock_config.o
+ .debug_str     0x0000b203       0x33 ./board/clock_config.o
                                 0x150 (size before relaxing)
- .debug_str     0x0000b22d      0x5ef ./board/pin_mux.o
+ .debug_str     0x0000b236      0x5ef ./board/pin_mux.o
                                 0xbc0 (size before relaxing)
 
 .comment        0x00000000       0x70

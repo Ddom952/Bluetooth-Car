@@ -1,0 +1,51 @@
+Wszystkie wysyłane wiadomości powinny kończysz się terminatorem, w naszym przypadku jest to kropka
+Jeśli w wiadomości występuje więcej niż jedno słowo kluczowe lub wartość poszczególne tokeny powinny by oddzielone spacją
+
+Spis komend
+	* "dirleft"
+		ustawienie kierunku obrotu lewego koła
+		drugi argument "forward" lub "back"
+		np. ustawienie kierunku obrotu lewego koła do przodu "dirleft forward."
+	* "dirright"
+		ustawienie kierunku obrotu prawego koła
+		drugi argument "forward" lub "back"
+		np. ustawienie kierunku obrotu prawego koła do tyłu "dirright back."
+	* "back"
+		występujące jako pierwszy token w wiadomości jazda do tyłu z ustaloną prędkością (40% duty cycle PWM)
+		użycie: "back."
+		występujące jako drugi token w wiadomości po komendzie dirleft lub dirright oznacza kierunek obrotu
+	* "forward"
+		występujące jako pierwszy token w wiadomości jazda do przodu z ustaloną prędkością (40% duty cycle PWM)
+		użycie: "forward."
+		występujące jako drugi token w wiadomości po komendzie dirleft lub dirright oznacza kierunek obrotu
+	* "speedleft"
+		ustawienie prędkości obrotu lewego koła na wartość podaną jako drugi token
+		ustawienie prędkości polega na zmianie wypełnienia sygnału sterującego silnikiem lewego koła
+		wartości większe niż 80% są zmieniane na 80%, natomiast mniejsze od 15% na 0%
+		wartości wypełnienia powinny być podawane w zapisie hexadecymalnym np. 0x0F, 0x13
+		np. ustawienie prędkości, wypełnienia dla lewego koła na wartość 50 "speedleft 0x32."
+	* "speedright"
+		ustawienie prędkości obrotu prawego koła na wartość podaną jako drugi token
+		ustawienie prędkości polega na zmianie wypełnienia sygnału sterującego silnikiem lewego koła
+		wartości większe niż 80% są zmieniane na 80%, natomiast mniejsze od 15% na 0%
+		wartości wypełnienia powinny być podawane w zapisie hexadecymalnym np. 0x0F, 0x13
+		np. ustawienie prędkości, wypełnienia dla prawego koła na wartość 73 "speedright 0x49."
+	* "left"
+		powoduje obrót pojazdu w lewo, lewe koło obraca się do tyłu, prawe do przodu z prędkością, wypełnieniem ustalonym
+		na 16%
+		użycie: "left."
+	* "right"
+		powoduje obrót pojazdu w prawo, lewe koło obraca się do przodu, prawe natomiast do tyłu z prędkością, wypełnieniem
+		ustalonym na 16%
+		użycie: "right."
+	* "stop"
+		powoduje zatrzymanie pojazdu, wypełnienie sygnału sterującego koła pojazdu ustawiane jest na 0%
+		użycie: "stop."
+	* "stopleft"
+		powoduje zatrzymanie lewego koła pojazdu, wypełnienie sygnału sterującego lewym kołem ustawiane jest na 0%
+		użycie: "stopleft."	
+	* "stopright"
+		powoduje zatrzymanie prawego koła pojazdu, wypełnienie sygnału sterującego prawym kołem ustawiane jest na 0%
+		użycie: "stopright."
+
+Każde użycie niezgodne z przedstawionym powyżej zostaje ignorowane przez oprogramowanie
